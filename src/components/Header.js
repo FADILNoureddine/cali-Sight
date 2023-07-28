@@ -15,14 +15,11 @@ import calisightlogo from '@/assets/images/cali-sight-logo.png'
 
 
 const Attractions = [
-  { name: 'Adventure'},
+  { name: 'Post your Listing'},
   { name: 'Cruises'},
-  { name: 'Food & Drink'},
-  { name: 'History & Culture'},
-  { name: 'Seasonal Activities'},
-  { name: 'Shows & Concerts'},
-  { name: 'Tours & Day Trips'},
-  { name: 'Workshops'},
+  { name: 'Blog'},
+  { name: 'Travel'},
+  { name: 'Subscribe'},
   
 ]
 const callsToAction = [
