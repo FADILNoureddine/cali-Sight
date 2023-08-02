@@ -46,10 +46,10 @@ export default function Experience() {
       <main className="isolate">
         <div className="relative isolate -z-10">
           <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 sm:pb-40 pb-20 pt-20 md:pt-56 lg:px-8 lg:pt-20">
+            <div className="mx-auto max-w-7xl px-6 xs:pb-36 pb-20 pt-20 md:pt-56 lg:px-8 lg:pt-20">
               <div className="sm:block md:flex mx-auto max-w-2xl md:gap-x-2  gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full lg:shrink-0 xl:w-45 md:pt-0 xl:pt-12">
-                  <h2 className="mt-24 sm:text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 sm:mt-4">
+                  <h2 className="mt-24 xs:text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 xs:mt-4">
                     Experience the culture and nature throughout California
                   </h2>
                   <p className="relative mt-6 md:text-base text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
@@ -64,17 +64,17 @@ export default function Experience() {
                   </button>
                 </div>     
                            
-                <div className="mt-14 block justify-end gap-4 sm:mt-8 md:-mt-40 sm:justify-start md:pl-0  lg:mt-0 lg:pl-0 ">
+                <div className="mt-14 block justify-end gap-4 xs:mt-8 md:-mt-40 xs:justify-start md:pl-0 lg:mt-0 lg:pl-0 ">
                     <div className='flex md:gap-x-2 gap-x-4 h-52 lg:h-48'>
                         <div className='relative top-20'>
                             <Image
                                 src={culture1}
                                 alt=""
-                                className="sm:w-140 md:w-25 xl:w-56 h-44 rounded-xl bg-gray-900/5 object-cover shadow-lg "
+                                className="xs:w-140 md:w-25 xl:w-56 h-44 rounded-xl bg-gray-900/5 object-cover shadow-lg "
                             />
                             <div className='relative  md:h-16 h-20 md:-mt-16 -mt-20 bg-gradient-to-t from-gardien-color rounded-xl lg:w-56'>
-                                <h3 className=' ml-4 text-white font-semibold sm:text-xs text-sm'>A Guide to Exploring Colonial New York City</h3>
-                                <span className=' ml-4 text-white text-sm font-normal'>{formattedDate}</span>
+                                <h3 className='xs:ml-2 ml-4 text-white font-semibold xs:text-xs text-sm'>A Guide to Exploring Colonial New York City</h3>
+                                <span className='xs:ml-2 sm:ml-4 text-white text-sm font-normal'>{formattedDate}</span>
                             </div>
                         </div>
                         <div>
@@ -83,33 +83,33 @@ export default function Experience() {
                                 alt=""
                                 className="md:w-32 xl:w-48 h-64 rounded-xl bg-gray-900/5 object-cover shadow-lg"
                             />
-                            <div className='relative md:w-32 sm:h-24 md:h-20 h-20 sm:-mt-24 md:-mt-20 -mt-20 bg-gradient-to-t from-gardien-color rounded-xl lg:w-48'>
-                                <h3 className='ml-4 text-white font-semibold sm:text-xs text-sm'>A Guide to Exploring Colonial New York City</h3>
-                                <span className='ml-4 text-white text-sm font-normal'>{formattedDate}</span>
+                            <div className='relative md:w-32 xs:h-28 sm:h-24 md:h-20 h-20 xs:-mt-28 sm:-mt-24 md:-mt-20 -mt-20 bg-gradient-to-t from-gardien-color rounded-xl lg:w-48'>
+                                <h3 className='xs:ml-2 ml-4 text-white font-semibold xs:text-xs text-sm'>A Guide to Exploring Colonial New York City</h3>
+                                <span className='xs:ml-2 sm:ml-4 text-white text-sm font-normal'>{formattedDate}</span>
                             </div>
                         </div>
                     </div>
-                <div className='flex md:gap-x-2 gap-x-4 relative sm:top-16 xl:top-20'>
+                <div className='flex md:gap-x-2 gap-x-4 relative xs:top-16 xl:top-20'>
                     <div>
                         <Image
                             src={culture3}
                             alt=""
                             className="md:w-32 xl:w-48 h-64 rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
-                        <div className='relative md:w-32 sm:h-24 md:h-20 h-20 sm:-mt-24 md:-mt-20 -mt-20 bg-gradient-to-t from-gardien-color rounded-xl lg:w-48'>
-                            <h3 className='ml-4 text-white font-semibold sm:text-xs text-sm'>A Guide to Exploring Colonial New York City</h3>
-                            <span className='ml-4 text-white text-sm font-normal'>{formattedDate}</span>
+                        <div className='relative md:w-32 xs:h-24 md:h-20 h-20 xs:-mt-24 md:-mt-20 -mt-20 bg-gradient-to-t from-gardien-color rounded-xl lg:w-48'>
+                            <h3 className='xs:ml-2 ml-4 text-white font-semibold xs:text-xs text-sm'>A Guide to Exploring Colonial New York City</h3>
+                            <span className='xs:ml-2 ml-4 text-white text-sm font-normal'>{formattedDate}</span>
                         </div>
                     </div>
                     <div>
                         <Image
                             src={culture4}
                             alt=""
-                            className="sm:w-140 md:w-25 xl:w-56 h-44 rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                            className="xs:w-140 md:w-25 xl:w-56 h-44 rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
                         <div className='relative md:h-16 h-20 md:-mt-16 -mt-20 bg-gradient-to-t from-gardien-color rounded-xl lg:w-56'>
-                            <h3 className='ml-4 text-white font-semibold sm:text-xs text-sm'>A Guide to Exploring Colonial New York City</h3>
-                            <span className='ml-4 text-white text-sm font-normal'>{formattedDate}</span>
+                            <h3 className='xs:ml-2 ml-4 text-white font-semibold xs:text-xs text-sm'>A Guide to Exploring Colonial New York City</h3>
+                            <span className='xs:ml-2 ml-4 text-white text-sm font-normal'>{formattedDate}</span>
                         </div>
                     </div>
                     

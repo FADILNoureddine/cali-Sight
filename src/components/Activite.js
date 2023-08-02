@@ -118,7 +118,7 @@ export default function Activite() {
       <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">More activities</h2>            
           </div>    
-      <ul role="list" className="grid gap-6 bg-section sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4 mx-auto max-w-7xl px-6 pt-36 sm:pt-12 lg:px-8 lg:pt-20">
+      <ul role="list" className="grid gap-6 bg-section sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4 mx-auto max-w-7xl px-6 pt-36 xs:pt-12 lg:px-8 lg:pt-20">
         {people.map((person) => (
           <li key={person.id} className="col-span-1 rounded-lg bg-white shadow">
             <div className=" w-full items-center justify-between px-6 pt-6">

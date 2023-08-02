@@ -58,6 +58,7 @@ module.exports = {
         '50': '50vw',
         '63': '63.5vw',
         '85': '85vw',
+        '86': '86vw',
         '88': '88vw',
         '90': '90vw',
         '93': '93vw',
@@ -73,11 +74,11 @@ module.exports = {
         
       },
       maxWidth: {
-        '18': '18rem',
+        '79': '79rem',
       }
     },
     screens: {
-      xsm: '320px',
+      xs: '320px',
       // => @media (min-width: 320px) { ... }
 
       sm: '425px',

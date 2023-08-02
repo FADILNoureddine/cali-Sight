@@ -21,7 +21,7 @@ export default function Main() {
        <Header />
         <main>
           <Hero />
-          <Featured />
+          <Featured autoSlide={true} />
           <Trip />
           <Experience />
           <Activite />
