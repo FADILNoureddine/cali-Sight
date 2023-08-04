@@ -10,6 +10,7 @@ import concert_3 from "@/assets/images/trip/concert_3.jpg";
 import concert_4 from "@/assets/images/trip/concert_4.jpg";
 import concert_5 from "@/assets/images/trip/concert_5.jpg";
 import adventure_1 from "@/assets/images/trip/adventure_1.jpg";
+import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -101,9 +102,84 @@ const concerts = [
     price: "Free",
     category: { title: "Booking", href: "#" },
   },
+  {
+    id: 7,
+    title: "Van Rides Tour",
+    href: "#",
+    description: "Silver Valley Unified School , California",
+    imageUrl: adventure_1,
+    price: "Free",
+    category: { title: "Booking", href: "#" },
+  },
+  {
+    id: 8,
+    title: "Van Rides Tour",
+    href: "#",
+    description: "Silver Valley Unified School , California",
+    imageUrl: adventure_1,
+    price: "Free",
+    category: { title: "Booking", href: "#" },
+  },
+  {
+    id: 9,
+    title: "Van Rides Tour",
+    href: "#",
+    description: "Silver Valley Unified School , California",
+    imageUrl: adventure_1,
+    price: "Free",
+    category: { title: "Booking", href: "#" },
+  },
+  {
+    id: 10,
+    title: "Van Rides Tour",
+    href: "#",
+    description: "Silver Valley Unified School , California",
+    imageUrl: adventure_1,
+    price: "Free",
+    category: { title: "Booking", href: "#" },
+  },
+  {
+    id: 11,
+    title: "Van Rides Tour",
+    href: "#",
+    description: "Silver Valley Unified School , California",
+    imageUrl: adventure_1,
+    price: "Free",
+    category: { title: "Booking", href: "#" },
+  },
+  {
+    id: 12,
+    title: "Van Rides Tour",
+    href: "#",
+    description: "Silver Valley Unified School , California",
+    imageUrl: adventure_1,
+    price: "Free",
+    category: { title: "Booking", href: "#" },
+  },
+  {
+    id: 13,
+    title: "Van Rides Tour",
+    href: "#",
+    description: "Silver Valley Unified School , California",
+    imageUrl: adventure_1,
+    price: "Free",
+    category: { title: "Booking", href: "#" },
+  },
 ];
 
 export default function Trip() {
+  const itemsPerPage = 6;
+  const [post, setPost] = useState(itemsPerPage);
+
+  const handleLoadMore = () => {
+    setPost((prevVisibleItems) => prevVisibleItems + 3);
+  };
+
+  const handleClick = () => {
+    setPost((prevVisibleItems) => prevVisibleItems + 3);
+  };
+
+  const displayedData = concerts.slice(0, post);
   return (
     <div className="bg-section py-20 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -165,11 +241,8 @@ export default function Trip() {
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl md:gap-x-4 gap-x-8 gap-y-4 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-3">
-          {concerts.map((concert) => (
-            <article
-              key={concert.id}
-              className="border-solid border rounded-lg flex flex-col items-start justify-between"
-            >
+          {displayedData.map((concert) => (
+            <div className="carosel border-solid border rounded-lg flex flex-col items-start justify-between" key={concert.id}>
               <div className="relative w-full">
                 <Image
                   src={concert.imageUrl}
@@ -211,18 +284,20 @@ export default function Trip() {
                   </div>
                 </div>
               </div>
-            </article>
+            </div>
           ))}
         </div>
-        <div className="flex justify-center">
-          <button
-            type="button"
-            className="mt-4 rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-primary-color shadow-sm ring-1 ring-inset ring-primary-color hover:bg-gray-50"
-          >
-            Load More
-            <FontAwesomeIcon icon={faAngleDown} className="pl-2" />
-          </button>
-        </div>
+        <div className="justify-center flex">
+            {concerts.length > post && (
+              <button
+                className="mt-4 rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-primary-color shadow-sm ring-1 ring-inset ring-primary-color hover:bg-gray-50"
+                onClick={handleClick}
+              >
+                Load More
+                <FontAwesomeIcon icon={faAngleDown} className="pl-2" />
+              </button>
+            )}
+          </div>
       </div>
     </div>
   );

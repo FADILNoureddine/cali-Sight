@@ -4,6 +4,7 @@ import Featured from "@/components/Featured";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+// import SimpleSlider from "@/components/React-Slick";
 import Trip from "@/components/Trip";
 
 import Head from "next/head";
@@ -20,6 +21,7 @@ export default function Main() {
       <div>
        <Header />
         <main>
+          {/* <SimpleSlider/> */}
           <Hero />
           <Featured autoSlide={true} />
           <Trip />
